@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_2"
+    android:background="#fff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFront"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#1289A7"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <TextView
+            android:id="@+id/resultTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textSize="50dp"
+            android:textColor="#000"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardFront"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+        <TextView
+            android:id="@+id/showBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9980FA"
+            android:padding="10dp"
+            android:text="Show"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
